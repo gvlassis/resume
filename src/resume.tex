@@ -1,4 +1,6 @@
-\documentclass[a4paper]{article}
+\documentclass{article}
+
+\usepackage[a4paper, margin=1in]{geometry}
 
 \usepackage{fontspec}[no-math]
 	\setsansfont{FiraGO}
@@ -20,7 +22,7 @@
 \usepackage{fancyhdr}
 	\pagestyle{fancy}
 	\renewcommand{\headrulewidth}{0pt}
-	\fancyfoot[C]{Updated: \today\ | latest: \href{https://github.com/gvlassis/resume/releases/latest/download/resume.pdf}{here}}
+	\fancyfoot[C]{Updated: \today\ | Latest: \href{https://github.com/gvlassis/resume/releases/latest/download/resume.pdf}{here} | Code: \href{https://github.com/gvlassis/resume/releases/latest/download/resume.pdf}{here}}
 
 \begin{document}
 
@@ -28,28 +30,35 @@
 
 	{\LARGE \bfseries \color{primary} Georgios Vlassis \par}
 
-	\vspace{1em}
-
 	{\large \color{secondary} e-mail: gvlassis@mailbox.org \par}
-
-	\vspace{1em}
 
 	{\large \color{secondary} Phone: +41762048537, +306980092001 \par}
 
-	\vspace{1em}
-
 	{\large \color{secondary} Website: \href{https://gvlassis.com/}{gvlassis.com} \par}
 
-	\vspace{1em}
+	{\large \color{secondary} Google Scholar: \href{https://scholar.google.com/citations?user=wIPwiSoAAAAJ&hl=en}{here} \par}
 
 	{\large \color{secondary} GitHub: \href{https://github.com/gvlassis}{github.com/gvlassis} \par}
+
 
 \end{Center}
 
 \section*{Experience}
+Feb 2022-now: \textbf{Research Assistant}, Machine Learning Theory, Professor David Belius
 
 \section*{Education}
+Sep 2021-now: \textbf{MSc Electrical Engineering}, ETH Zurich
+
+
+Sep 2016-Jun 2016: \textbf{Integrated Master's Electrical Engineering}, University of Patras
 
 \section*{Skills}
+\begin{itemize}
+	\item Programming languages (\textit{indicative}): Python, C, Java, Prolog, \TeX
+	\item High Performance Computing: Assembly (Intel, Arm), Parallel Processing (pthreads, OpenMP, MPI), GPU acceleration (PyTorch, OpenACC), Distributed Processing (Slurm)
+	\item DevOps: Unix, Bash, Git \& GitHub, Containers (Docker \& Singularity), versioning, licensing, packaging (Conda)
+	\item Web: Javascript, HTML, CSS, Static site generators (11ty)
+	\item Databases: SQL, MongoDB, HBase
+\end{itemize}
 
 \end{document}
